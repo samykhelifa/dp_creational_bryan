@@ -1,16 +1,16 @@
 public class Test {
 
 	public static void main(String args[]) {
-		DbSingleton instance = DbSingleton.getInstance();
+		Singleton instance = Singleton.getInstance();
                 System.out.println(anotherInstance);
-		DbSingleton anotherInstance = DbSingleton.getInstance();
-		if(singletonRuntime == anotherInstance) {
+		Singleton anotherInstance = Singleton.getInstance();
+		if(instance == anotherInstance) {
 			System.out.println("They are the same instance");
 		}
 		
 	}
 }
-class DbSingleton {
+class Singleton {
 
 	private static DbSingleton instance = null;
 	private DbSingleton() {}
