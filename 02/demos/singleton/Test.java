@@ -12,17 +12,13 @@ public class Test {
 }
 class Singleton {
 
-	private static DbSingleton instance = null;
-	private DbSingleton() {}
-	public static DbSingleton getInstance() {
+	private static Singleton instance = null;
+	private Singleton() {}
+	public static Singleton getInstance() {
 		if(instance == null) {
-			synchronized(DbSingleton.class) {
-				if(instance == null) {
-					instance = new DbSingleton();
+			instance = new Singleton();
 				}
-			}
-		}
-		
-		return instance;
+                return instance;
 	}
+}
 	
