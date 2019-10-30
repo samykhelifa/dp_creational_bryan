@@ -12,8 +12,11 @@ public class Test {
 }
 class Singleton {
 
-	private static Singleton instance = null;
-	private Singleton() {}
+	private static volatile  Singleton instance = null;
+	private Singleton() {
+	  if(instance != null)
+		  throw new RuntimeException("use getInstance() !");
+	}
 	public static Singleton getInstance() {
 		if(instance == null) {
 			instance = new Singleton();
