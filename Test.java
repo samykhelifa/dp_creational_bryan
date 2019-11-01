@@ -51,6 +51,7 @@ public class Test
                           t2.c.x + " " + t2.c.y); 
       System.out.println("t1.a : "+ t1.a);
       System.out.println("t2.a : "+ t2.a);
+      System.out.println("t1.a : "+ t1.a);
             
     } 
 } 
