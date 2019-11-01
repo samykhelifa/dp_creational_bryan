@@ -45,9 +45,12 @@ public class Test
   
        // Change in object type field will be 
        // reflected in both t2 and t1(shallow copy) 
-       System.out.println(t1.a + " " + t1.b + " " + 
+    //   System.out.println(t1.a + " " + t1.b + " " + 
                           t1.c.x + " " + t1.c.y); 
-       System.out.println(t2.a + " " + t2.b + " " + 
+     //  System.out.println(t2.a + " " + t2.b + " " + 
                           t2.c.x + " " + t2.c.y); 
+      System.out.println("t1.a : "+ t1.a);
+      System.out.println("t2.a : "+ t2.a);
+            
     } 
 } 
