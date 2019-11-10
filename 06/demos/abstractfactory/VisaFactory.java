@@ -1,7 +1,7 @@
 package com.pluralsight.abstractfactory;
 
 public class VisaFactory extends CreditCardFactory {
-
+ault
 	@Override
 	public CreditCard getCreditCard(CardType cardType) {
 		switch (cardType) {
@@ -12,6 +12,10 @@ public class VisaFactory extends CreditCardFactory {
 			case PLATINUM:
 				
 				return new VisaBlackCreditCard();	
+				
+			default : 
+				
+				break ;
 			
 		}
 		
